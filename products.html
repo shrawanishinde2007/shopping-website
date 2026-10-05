@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Clothes Online | H.M Clothes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="products">
+
+  <div id="site-header"></div>
+
+  <main class="container">
+    <div class="page-head">
+      <h1><span id="listTitle">All Products</span><small id="listCount"></small></h1>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <button class="btn btn-outline filter-toggle" id="filterToggle">☰ Filters</button>
+        <div class="sort-box">
+          <label for="sortSelect">Sort by:</label>
+          <select id="sortSelect">
+            <option value="recommended">Recommended</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Rating</option>
+            <option value="discount">Discount</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="listing">
+      <!-- FILTERS -->
+      <aside class="filter-panel" id="filterPanel">
+        <div class="filter-head"><span>Filters</span><button type="button" id="clearFilters">Clear all</button></div>
+        <div class="f-group"><h5>Gender</h5><div id="fGender"></div></div>
+        <div class="f-group"><h5>Category</h5><div id="fCategory"></div></div>
+        <div class="f-group"><h5>Size</h5><div id="fSize"></div></div>
+        <div class="f-group"><h5>Brand</h5><div id="fBrand"></div></div>
+        <div class="f-group">
+          <h5>Price Range</h5>
+          <input type="range" class="price-range" id="priceRange" min="200" max="3000" step="100" value="3000">
+          <div class="price-label"><span>₹200</span><span>Up to <b id="priceLabel">₹3,000</b></span></div>
+        </div>
+        <div class="f-group"><h5>Rating</h5><div id="fRating"></div></div>
+        <div class="f-group"><h5>Discount</h5><div id="fDiscount"></div></div>
+        <div class="f-group"><h5>Colour</h5><div id="fColor"></div></div>
+      </aside>
+
+      <!-- PRODUCTS -->
+      <section>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | H.M Clothes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+
+  <div id="site-header"></div>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-side">
+        <h2>Welcome back to H.M Clothes</h2>
+        <ul>
+          <li>✔ Track your orders</li>
+          <li>✔ Save your wishlist</li>
+          <li>✔ Faster checkout</li>
+          <li>✔ Exclusive member offers</li>
+        </ul>
+      </div>
+      <form class="auth-form" id="authForm" novalidate>
+        <h1>Login</h1>
+        <p class="sub">Enter your details to continue shopping.</p>
+
+        <div class="field">
+          <label for="loginId">Mobile number / Email</label>
+          <input type="text" id="loginId" placeholder="10-digit mobile or email" autocomplete="username">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="loginPw">Password</label>
+          <input type="password" id="loginPw" placeholder="Enter password" autocomplete="current-password">
+          <button type="button" class="eye" aria-label="Show password">👁️</button>
+          <span class="err"></span>
+        </div>
+
+        <div class="row-between">
+          <label class="chk"><input type="checkbox" id="remember"> Remember me</label>
+          <a href="#" id="forgotLink">Forgot password?</a>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit">Login</button>
+        <p class="switch">New to H.M Clothes? <a href="signup.html">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
